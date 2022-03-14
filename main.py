@@ -4,10 +4,9 @@ from methodFile import DevTools as DT
 active=True
 citySearch= input("input the city you would like to search")
 myCitylat = DT.COOr(citySearch)
-lattitude=myCitylat['latt'][0]
+lattitude=myCitylat['latt'][0]#use the first indexed iteration of longitude and latitude as it
 longitude = myCitylat['longt'][0]
-print(longitude,lattitude)
-print(DT.temps(lattitude,longitude))
+DT.temps(lattitude,longitude) #apply the plot using the pandas function
 
 
 
